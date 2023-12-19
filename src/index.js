@@ -900,6 +900,9 @@ io.on("connection", async (socket) => {
     });
 })
 server.listen(port, async () => {
+    res.send({
+        data:"hello"
+    })
     // const data1 = [{ color: "red" }, { color: "green" }, { color: "green" },{ color: "red" }]
     // var data2 = []
     // data1.map((data, index) => {
