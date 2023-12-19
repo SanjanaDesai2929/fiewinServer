@@ -36,6 +36,7 @@ var io = new Server(server, {
     },
 })
 
+
 app.use(cors())
 require("dotenv").config();
 const port = process.env.PORT;
@@ -78,7 +79,9 @@ function startTimer(duration, display) {
 startTimer(Date.now());
 
 
-
+app.get('/test', async (req,res) => {
+    res.send('Hello Fiewin')
+})
 
 
 app.get('/get_game_status', async (req, res) => {
